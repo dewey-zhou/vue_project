@@ -4,7 +4,7 @@ export default function ajax (url = '', data = {}, type = 'GET') {
     let promise
     if (type === 'GET') {
       let dataStr = ''
-      Object.keys(data).forezch(key => {
+      Object.keys(data).forEach(key => {
         dataStr += key + '=' + data[key] + '&'
       })
       if (dataStr !== '') {
